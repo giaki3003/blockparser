@@ -139,6 +139,7 @@ my(@inc) = qw(
 #-DMYRIADCOIN
 #-DUNOBTANIUM
 #-DPROTOSHARES
+#-DBEETLE
 
 
 # Libraries

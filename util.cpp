@@ -590,6 +590,10 @@ static int getCoinType() {
         #if defined(UNOBTANIUM)
             130
         #endif
+
+        #if defined(BEET)
+            26
+        #endif
     ;
 }
 
@@ -1024,6 +1028,9 @@ const char *getInterestingAddr() {
 
         "udicetdXSo6Zc7vhWgAZfz4XrwagAX34RK"
 
+    #elif defined (BEET)
+        "BfWjxAgzBLdbVcvVYzbn13MDaWLNxKUqJL"
+
     #else
 
         fatal("no address specified")
@@ -1065,7 +1072,7 @@ const char *getInterestingAddr() {
 
 #endif
 
-#if defined(CLAM) || defined(JUMBUCKS)
+#if defined(CLAM) || defined(JUMBUCKS) || defined (BEET)
 
     #include <scrypt/scrypt.h>
 
