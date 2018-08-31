@@ -592,7 +592,7 @@ static int getCoinType() {
         #endif
 
         #if defined(BEETLE)
-            26
+            127
         #endif
     ;
 }
