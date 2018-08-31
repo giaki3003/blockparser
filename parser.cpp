@@ -144,7 +144,7 @@ static double getMem() {
 #endif
 
 #if defined BEETLE
-    static const size_t gHeaderSize = 80;
+    static const size_t gHeaderSize = 256;
     static auto kCoinDirName = ".Beetle";
     static const uint32_t gExpectedMagic = 0x63fbbab9;
 #endif
