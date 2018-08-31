@@ -740,7 +740,9 @@ static void getBlockHeader(
         } else {
             scrypt(hash, p, gHeaderSize);
         }
-    #elif defined(JUMBUCKS) || defined(BEETLE)
+    #elif defined(JUMBUCKS)
+        scrypt(hash, p, gHeaderSize);
+    #elif defined(BEETLE)
         scrypt(hash, p, gHeaderSize);
     #else
         sha256Twice(hash, p, gHeaderSize);
