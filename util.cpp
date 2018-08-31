@@ -591,7 +591,7 @@ static int getCoinType() {
             130
         #endif
 
-        #if defined(BEET)
+        #if defined(BEETLE)
             26
         #endif
     ;
@@ -1028,7 +1028,7 @@ const char *getInterestingAddr() {
 
         "udicetdXSo6Zc7vhWgAZfz4XrwagAX34RK"
 
-    #elif defined (BEET)
+    #elif defined (BEETLE)
         "BfWjxAgzBLdbVcvVYzbn13MDaWLNxKUqJL"
 
     #else
