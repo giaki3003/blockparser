@@ -405,13 +405,13 @@ static void parseTX(
         startTX(p, txHash);
     }
 
-        #if defined(CLAM) || defined(BEETLE)
+        #if defined(CLAM)
             LOAD(uint32_t, nVersion, p);
         #else
             SKIP(uint32_t, nVersion, p);
         #endif
 
-        #if defined(PEERCOIN) || defined(CLAM) || defined(JUMBUCKS) || defined(PAYCON) || defined(BEETLE)
+        #if defined(PEERCOIN) || defined(CLAM) || defined(JUMBUCKS) || defined(PAYCON)
             SKIP(uint32_t, nTime, p);
         #endif
 
@@ -480,7 +480,7 @@ static bool parseBlock(
                 }
             endTXs(p);
 
-            #if defined(PEERCOIN) || defined(CLAM) || defined(JUMBUCKS) || defined(PAYCON) || defined(BEETLE)
+            #if defined(PEERCOIN) || defined(CLAM) || defined(JUMBUCKS) || defined(PAYCON)
                 LOAD_VARINT(vchBlockSigSize, p);
                 p += vchBlockSigSize;
             #endif
