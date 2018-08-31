@@ -364,7 +364,7 @@
         );
     #endif
 
-    #if defined(CLAM) || defined(JUMBUCKS) || defined(BEET)
+    #if defined(CLAM) || defined(JUMBUCKS) || defined(BEETLE)
         void scrypt(
                   uint8_t *h9r,
             const uint8_t *buf,

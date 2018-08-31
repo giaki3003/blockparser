@@ -1072,7 +1072,7 @@ const char *getInterestingAddr() {
 
 #endif
 
-#if defined(CLAM) || defined(JUMBUCKS) || defined (BEET)
+#if defined(CLAM) || defined(JUMBUCKS) || defined (BEETLE)
 
     #include <scrypt/scrypt.h>
 
